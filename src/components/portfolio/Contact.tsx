@@ -102,27 +102,24 @@ const Contact = () => {
               className="flex gap-3 pt-4"
             >
               <Button
-                size="lg"
-                variant="outline"
-                className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
-                 onClick={() => window.location.href = 'https://www.linkedin.com/in/kalaiayarasan-s-a746a7295'}
-              >
-                <Linkedin className="w-5 h-5" />
-                LinkedIn
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
-                 onClick={() => window.location.href = 'https://github.com/Kalaiyarasan22052003'}
-                
-              >
-                <Github className="w-5 h-5" />
-                GitHub
-              </Button>
-            </motion.div>
-          </motion.div>
+  size="lg"
+  variant="outline"
+  className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
+  onClick={() => window.open('https://www.linkedin.com/in/kalaiayarasan-s-a746a7295', '_blank')}
+>
+  <Linkedin className="w-5 h-5" />
+  LinkedIn
+</Button>
 
+<Button
+  size="lg"
+  variant="outline"
+  className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
+  onClick={() => window.open('https://github.com/Kalaiyarasan22052003', '_blank')}
+>
+  <Github className="w-5 h-5" />
+  GitHub
+</Button>
           {/* CTA Card */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
