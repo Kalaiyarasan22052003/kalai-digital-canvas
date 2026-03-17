@@ -105,6 +105,7 @@ const Contact = () => {
                 size="lg"
                 variant="outline"
                 className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
+                 onClick={() => window.location.href = 'https://www.linkedin.com/in/kalaiayarasan-s-a746a7295'}
               >
                 <Linkedin className="w-5 h-5" />
                 LinkedIn
@@ -113,6 +114,8 @@ const Contact = () => {
                 size="lg"
                 variant="outline"
                 className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
+                 onClick={() => window.location.href = 'https://github.com/Kalaiyarasan22052003'}
+                
               >
                 <Github className="w-5 h-5" />
                 GitHub
