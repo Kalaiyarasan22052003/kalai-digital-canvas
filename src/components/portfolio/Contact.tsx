@@ -95,31 +95,29 @@ const Contact = () => {
             ))}
 
             {/* Social links */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: 0.6 }}
-              className="flex gap-3 pt-4"
-            >
+            <div className="flex gap-3 pt-4">
               <Button
-  size="lg"
-  variant="outline"
-  className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
-  onClick={() => window.open('https://www.linkedin.com/in/kalaiayarasan-s-a746a7295', '_blank')}
->
-  <Linkedin className="w-5 h-5" />
-  LinkedIn
-</Button>
+                size="lg"
+                variant="outline"
+                className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
+                onClick={() => window.open('https://www.linkedin.com/in/kalaiayarasan-s-a746a7295', '_blank')}
+              >
+                <Linkedin className="w-5 h-5" />
+                LinkedIn
+              </Button>
 
-<Button
-  size="lg"
-  variant="outline"
-  className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
-  onClick={() => window.open('https://github.com/Kalaiyarasan22052003', '_blank')}
->
-  <Github className="w-5 h-5" />
-  GitHub
-</Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="flex-1 gap-2 rounded-xl border-border hover:bg-muted"
+                onClick={() => window.open('https://github.com/Kalaiyarasan22052003', '_blank')}
+              >
+                <Github className="w-5 h-5" />
+                GitHub
+              </Button>
+            </div>
+          </motion.div>
+
           {/* CTA Card */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -142,10 +140,12 @@ const Contact = () => {
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-base rounded-xl shadow-lg shadow-accent/25 hover:shadow-accent/40 transition-all duration-300 w-full sm:w-auto"
               onClick={() => window.location.href = 'mailto:kalai10835@gmail.com'}
             >
-        <Mail className="w-5 h-5 mr-2" />
-          Send Me an Email
-        </Button>
-      </motion.div>
+              <Mail className="w-5 h-5 mr-2" />
+              Send Me an Email
+            </Button>
+          </motion.div>
+        </div>
+      </div>
     </section>
   );
 };
