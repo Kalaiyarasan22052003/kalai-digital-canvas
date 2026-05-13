@@ -142,12 +142,10 @@ const Contact = () => {
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-base rounded-xl shadow-lg shadow-accent/25 hover:shadow-accent/40 transition-all duration-300 w-full sm:w-auto"
               onClick={() => window.location.href = 'mailto:kalai10835@gmail.com'}
             >
-              <Mail className="w-5 h-5 mr-2" />
-              Send Me an Email
-            </Button>
-          </motion.div>
-        </div>
-      </div>
+        <Mail className="w-5 h-5 mr-2" />
+          Send Me an Email
+        </Button>
+      </motion.div>
     </section>
   );
 };
